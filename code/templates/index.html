@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@bhrs⚕️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="http://127.0.0.1:5000/">@BHRS⚕️</a>
+      </div>
+      <ul>
+        <li><a href="{{ url_for('static', filename='about.html') }}">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">⚕️@ge Based  Health Recommendation system✨</div>
+    <div class="sub_title">Age-related problems</div>
+    <div class="row">
+    <form method="POST">
+        <input class="clean-slide" type="number" name="age" required><label for="age">Age:</label><br>
+
+
+        <input class="clean-slide" type="number" name="weight" required><label for="weight">Weight (kg):</label><br>
+
+
+        <input class="clean-slide" type="number" name="height" step="0.01" required><label for="height">Height (m):</label><br>
+
+
+        <input class="clean-slide" type="text" name="conditions">        <label for="conditions">Medical Conditions:</label><br>
+
+        <input type="submit" value="🧬Analysis">
+    </form>
+  </div>
+      <div class="btns">
+          <a href="https://keystone.health/geriatric-diseases"><button>Learn More</button></a>
+          </div>
+    </div>
+</body>
+</html>

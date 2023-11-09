@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@bhrs⚕️</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="http://127.0.0.1:5000/">@BHRS⚕️</a>
+      </div>
+      <ul>
+        <li><a href="{{ url_for('static', filename='about.html') }}">About</a></li>
+        <li><a href="http://127.0.0.1:5000/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="result">
+    <h1>Recommendation</h1>
+    {% if recommendations %}
+        <ul>
+            {% for recommendation in recommendations %}
+                <li>{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+    {% endif%}
+    </div>
+    <iframe title="d" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=bd3de18b-11a1-4714-bac3-cb44b89285f5&autoAuth=true&ctid=a5840ece-7ae5-48e0-9ebe-248ceb407d8b" frameborder="0" allowFullScreen="true"></iframe></body>
+</html>
